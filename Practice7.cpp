@@ -1,5 +1,3 @@
-//COPY CONSTRUCTOR
-
 
 #include <iostream>
 using namespace std;
@@ -19,6 +17,14 @@ class Hero{
        cout<<"this->  "<<this<<endl;
        this->health = health ;
        this->level = level;
+   }
+   
+   //copy constructor
+   //pass by reference
+   Hero(Hero& temp){ 
+       cout<<"Copy Constructor Called"<<endl;
+       this->health = temp.health;
+       this->level = temp.level;
    }
    
    int gethealth(){ 
@@ -48,9 +54,9 @@ int main() {
    
    Hero h1 (40,'C');
    
-//   h2.health = h1.health;
-//   h2.level = h1.level;
-//  The above 2 lines can be written as a single line like :-
+    //   h2.health = h1.health;
+    //   h2.level = h1.level;
+    //  The above 2 lines can be written as a single line like :-
    Hero h2(h1);
    h2.print();
    
@@ -58,9 +64,8 @@ int main() {
     return 0;
 }
 
-
-
 //OUTPUT
-// this->  0x7ffc292cdd48
+// this->  0x7ffd16dc7858
+// Copy Constructor Called
 // 40
 // C
