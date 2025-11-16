@@ -1,9 +1,14 @@
 INHERITENCE 
-    Modes of inheritence: 
-    Types of inheritence:
+    # Modes of inheritence: 
+    # Types of inheritence:
         Single 
         Multi-level
         Multiple
         Hybrid : combination of more than 1 type of inheritence 
-        Heirarchical
+        Heirarchical 
+
+
+
+    # Inheritence Ambiguity
+      
 

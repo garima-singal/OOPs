@@ -1,0 +1,8 @@
+ABSTRACTION
+    Implementation hiding 
+
+    # Advantages:
+        1. Only you can make changes to yr data and function.
+        2. Increases reusability of code 
+        3. Avoids duplication of code
+        4. Makes application secure . not allow anyone to see background details. 

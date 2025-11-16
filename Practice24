@@ -1,0 +1,13 @@
+POLYMORPHISM - existing in multiple forms 
+
+    # Types :
+        1. Compile Time Polymorphism / Static Polymorphism
+            a. Function Overloading - (changing input parameters)
+            b. Operater Overloading 
+
+        2. Run Time Polymorphism / Dynamic Polymorphism - depends on inheritence 
+            Method Overriding / Function Overriding 
+                Rules : Same function name & input parameters 
+
+
+   
