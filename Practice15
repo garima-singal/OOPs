@@ -1,0 +1,17 @@
+Encapsulation : 
+    The process of grouping data members and corresponding methods into a single unit is known as Encapsulation.(Wrapping up data members and funtions.)
+    
+    Fully encapsulated class :- 
+        all data members are private. 
+        so all these data members can be accessed in same class.
+
+    Advantages :-
+        Information Hiding / Data Hiding - Security aspects 
+        If we want , we can make class - "Read only"
+        Code Reusability
+        Unit Testing
+
+
+
+
+    
