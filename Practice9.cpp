@@ -1,5 +1,4 @@
-// default copy constructor =>shallow copy 
-
+//Deep Copy 
 
 #include <iostream>
 #include <cstring>
@@ -25,13 +24,17 @@ class Hero{
        this->level = level;
    }
    
-   //copy constructor
-   //pass by reference
-//   Hero(Hero& temp){ 
-//       cout<<"Copy Constructor Called"<<endl;
-//       this->health = temp.health;
-//       this->level = temp.level;
-//   }
+//   copy constructor
+  Hero(Hero& temp){ 
+      //Deep Copy 
+      char* ch = new char[strlen(temp.name)+1];
+      strcpy(ch,temp.name);
+      this->name = ch;
+      
+      cout<<"Copy Constructor Called"<<endl;
+      this->health = temp.health;
+      this->level = temp.level;
+  }
    
    int gethealth(){ 
        return health;
@@ -76,25 +79,23 @@ int main() {
   h1.name[0] = 'S';
   h1.print();
   h2.print();
-  
-   //h1 change kra tha pr h2 bhi change ho gya
-   //shalow copy : same memory ko access kr rhe ho 2 alag naam se
    
     return 0;
 }
 
-
 //OUTPUT:-
+
 // Simple Constructor Called
 // Garima
 // 50
 // D
+// Copy Constructor Called
 // Garima
 // 50
 // D
 // Sarima
 // 50
 // D
-// Sarima
+// Garima
 // 50
 // D
